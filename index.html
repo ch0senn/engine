@@ -308,12 +308,14 @@
 		
 		</a-assets>
 		
-				<a-entity id="cylwall" gltf-model=#"tubewall.glb" position="0  0" rotation="0 0 0" scalwe="" static-body  ></a-entity>
+				<a-entity id="cylwall" gltf-model=#"tubewall.glb" position="0 3.5 0" rotation="0 0 0" scalwe="1.5 4 1.5" static-body opacity="0.25" ></a-entity>
 	 			
-				<a-entity id="piston" gltf-model="#ccyly" rotation="0 0 0" scale="2 1 2"
-				target="#journal" constraint="type:distance:3.0;pivot:0 0 0;"
+				<a-entity id="pistonassy" gltf-model="assets/models/tubewall.glb" rotation="0 0 0" scale="2 4 2"
 				dynamic-body ></a-entity>
 
+				<a-entity id="pistonshell" gltf-model="assets/models/tubewall.glb" rotation="0 0 0" scale="2 4 2"
+				target="#journal" constraint="type:distance:3.0;pivot:0 0 0;"
+				dynamic-body ></a-entity>
 	
 				<a-entity id="cylinderwall" gltf-model="#tubewall" position="0 5 0" rotation="0 0 0" scale="1 1 1"
 				opacity="0.25" static-body ></a-entity>
