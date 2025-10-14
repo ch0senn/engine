@@ -696,18 +696,17 @@
 	
 	
 	
-	<!--						<a-entity id="conrod" gltf-model="#cb1" position="0 3 0" style="height:2.0; width:0.2; depth:0.2" dynamic-body >
-								<a-entity id="becon" gltf-model="#ccylx" position="0 -1 0" rotation="0 0 0" scale="2 0.25 0.25" dynamic-body 
-								constraint="type:hinge;target:#journa11;"
-								></a-entity>
+						<a-entity id="conrod" mixin="cube style="height:5.0; width:0.5; depth:0.2;" dynamic-body >
+							
+								<a-entity id="becon" gltf-model="#ccylx" position="0 -1 0" rotation="0 0 0" scale="2 0.25 0.25" dynamic-body ;"	></a-entity>
 								
+						
 								<a-entity id="lecon" gltf-model="#ccylx" position="0 1 0" rotation="0 0 0" scale="1 5 5" static-body ></a-entity>
+	
+						</a-emtity>
 
 								
-							</a-entity>
-
-			
-			
+							
 			
 			
 			
@@ -720,7 +719,7 @@
 					<a-entity id="web2" gltf-model="#cb1" position="0.25 0.5 0" rotation="0 0 0" scale=".2 1 1" static-body ></a-entity>
 	
 	
- 		</a-entity-->
+ 		</a-entity>
 		
 			<a-sky id="askye" radius="100" color="blue"  ></a-sky>
 			<a-plane id="ground" style="width:80;height:80" position="0 0 0" rotation="-90 0 0" side="double"  visible="false" ></a-plane>
