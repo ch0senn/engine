@@ -241,7 +241,7 @@
                 box.appendChild(sphere);
             }
         });
-    </script><!--a-entity cbprims></a-entity-->
+    </script><<a-entity cbprims></a-entity>>
     <style>
         a-scene {
             height: 100%;
@@ -276,7 +276,7 @@
                 <a-asset-item id="ccylx" src="https://cdn.glitch.global/2a3af8bb-e7b2-4e50-8ce2-68e3e8cf4538/centerx.glb?v=1672861412777"></a-asset-item>
                 <a-asset-item id="ccyly" src="https://cdn.glitch.global/2a3af8bb-e7b2-4e50-8ce2-68e3e8cf4538/centery.glb?v=1672861445115"></a-asset-item>
                 <a-asset-item id="ccylz" src="https://cdn.glitch.global/2a3af8bb-e7b2-4e50-8ce2-68e3e8cf4538/centerz.glb?v=1672861498630"></a-asset-item>
-				<a-asset-item
+		
 		
 				  <a-mixin id="rotxx" animation__rotation__xx="property: rotation; dir: forward; dur: 2000;
 				repeat: indefinite; easing: linear; loop: true; to: 360 0 0"></a-mixin>
@@ -300,43 +300,41 @@
 				
 				  <a-mixin id="linxyz" animation__position__xyz="property: positimn; dir: alternate; dur: 3000;
 				repeat: indefinite; easing: linear; loop: true; to: 10 10 10"></a-mixin>
-				
-				<mixin id="#" ></mixin>
+
+
+		
+		
 		
 		</a-assets>
-		
-				<a-entity id="cylwall" mixin="#" position="0 5 0" rotation="0 0 0" scalwe="1 1 1" static-body  ></a-entity>
 	
-				<a-entity id="piston" gltf-model="#ccyly" rotation="0 0 0" scale="2 1 2"
-				
-				target="#journal" constraint="type:distance:3.0;pivot:0 0 0;"
-				dynamic-body ></a-entity>
+	<!--							<a-entity id="piston" gltf-model="#ccyly" position="0 0 0" rotation="0 0 0" scale="1 5 5" static-body ></a-entity>
 
 	
-				<a-entity id="cylinderwall" gltf-model="#cylwall" position="0 5.5 0" rotation="0 0 0" scale="1 1 1"
-				opacity="0.25" static-body ></a-entity>
-
 	
+	-->
 		<a-entity id="enganim" mixin="rotxx">
 		
 				<a-entity id="main1" gltf-model="#ccylx" position="-0.65 0 0" rotation="0 0 0" scale="3 5 5" static-body ></a-entity>
 
 				<a-entity id="web1" gltf-model="#cb1" position="-0.5 0.5 0" rotation="0 0 0" scale=".2 1 1" static-body ></a-entity>
-				
 				<a-entity id="bew1" gltf-model="#ccylx" position="-0.5 1.0 0" rotation="0 0 0" scale="2 5 5" static-body ></a-entity>
-								
-				<a-entity id="journal" gltf-model="#ccylx" position="0 1.0 0" rotation="0 0 0" scale="4 4 4" static-body ></a-entity>
+				
+				
+				<a-entity id="journal1" gltf-model="#ccylx" position="0 1.0 0" rotation="0 0 0" scale="4 4 4" static-body ></a-entity>
+
 				
 				<a-entity id="main2" gltf-model="#ccylx" position="0.65 0 0" rotation="0 0 0" scale="3 5 5" static-body ></a-entity>
 
 				<a-entity id="web2" gltf-model="#cb1" position="0.5 0.5 0" rotation="0 0 0" scale=".2 1 1" static-body ></a-entity>
 
-				<a-entity id="bew2" gltf-model="#ccylx" position="0.5 1.0 0" rotation="0 0 0" scale="2 5 5" static-body ></a-entity>		
-								
+				<a-entity id="bew2" gltf-model="#ccylx" position="0.5 1.0 0" rotation="0 0 0" scale="2 5 5" static-body ></a-entity>
+				
+				
+				
 		</a-entity>
 		
 
-					<!--a-entity id="piston" mixin="#pistondisplay" position="0 3 0" scale="1 1 1" >
+					<a-entity id="piston1" mixin="linyy" mixin="linyy" position="0 3 0" scale="2 1 2" >
 					
 							<!--a-entity id="pring1" gltf-model="#ccyly" position="0 0.45 0" rotation="0 0 0" scale="1.75 0.1 1.75 0.1" static-body ></a-entity>
 							<a-entity id="pring2" gltf-model="#ccyly" position="0 0.35 0" rotation="0 0 0" scale="1.55 0.1 1.55" static-body ></a-entity>
@@ -344,52 +342,64 @@
 							<a-entity id="pring4" gltf-model="#cb1" position="0 0 -0.05" rotation="0 0 0" scale="0.25 0.25 0.025" static-body ></a-entity>
 							<a-entity id="pring5" gltf-model="#" position="0 0 0" rotation="0 0 0" scale="0.8 0.8 1.0" static-body ></a-entity>
 							<a-entity id="pring6" gltf-model="#cb1" position="0 0 0.05" rotation="0 0 0" scale="0.25 0.25 0.025" static-body ></a-entity>
-							<a-entity id="pring7" g2.f-model="#ccyly" position="0 -0.325 0" rotation="0 0 0" scale="1.75 0.1 1.75" static-body ></a-entity>
+							<a-entity id="pring7" gltf-model="#ccyly" position="0 -0.325 0" rotation="0 0 0" scale="1.75 0.1 1.75" static-body ></a-entity>
 							<a-entity id="pring8" gltf-model="#ccyly" position="0 -0.375 0" rotation="0 0 0" scale="1.55 0.1 1.55" static-body ></a-entity>
 							<a-entity id="pring9" gltf-model="#ccyly" position="0 -0.425 0" rotation="0 0 0" scale="1.75 0.1 1.75" static-body ></a-entity>
 					-->
-							<!--a-entity id="pring1" gltf-model="#ccyly" position="0 0.75 0" rotation="0 0 0" scale="2.0 0.5 2.0" static-body ></a-entity>
+							<a-entity id="pring1" gltf-model="#ccyly" position="0 0.375 0" rotation="0 0 0" scale="3.75 0.5 3.75" static-body ></a-entity>
 							<!---a-entity id="pring2" gltf-model="#" position="0 0.35 0" rotation="0 0 0" scale="1.55 0.1 1.55" static-body ></a-entity>
 							<a-entity id="pring3" gltf-model="#" position="0 0.25 0" rotation="0 0 0" scale="1.75 0.1 1.75" static-body ></a-entity>
 							<a-entity id="pring4" gltf-model="#" position="0 0 -0.05" rotation="0 0 0" scale="0.25 0.25 0.025" static-body ></a-entity-->
-							<!--a-entity id="pring5" gltf-model="#cb1" position="0 0 0" rotation="0 0 0" scale="1 1 1" static-body ></a-entity>
+							<a-entity id="pring5" gltf-model="#cb1" position="0 0 0" rotation="0 0 0" scale=".5 .5 .5" static-body ></a-entity>
 							<!--a-entity id="pring6" gltf-model="#" position="0 0 0.05" rotation="0 0 0" scale="0.25 0.25 0.025" static-body ></a-entity>
 							<a-entity id="pring7" gltf-model="#" position="0 -0.325 0" rotation="0 0 0" scale="1.75 0.1 1.75" static-body ></a-entity>
 							<a-entity id="pring8" gltf-model="#" position="0 -0.375 0" rotation="0 0 0" scale="1.55 0.1 1.55" static-body ></a-entity-->
-							<!--a-entity id="pring9" gltf-model="#ccyly" position="0 -0.75 0" rotation="0 0 0" scale="2.0 0.5 2.0" static-body ></a-entity>
+							<a-entity id="pring9" gltf-model="#ccyly" position="0 -0.375 0" rotation="0 0 0" scale="3.75 0.5 3.75" static-body ></a-entity>
 					
-					</a-entity-->
 				
-					
-					<a-entity id="pistonassy" position="0 5.5 0"  rotation="0 0 0" scale="1 1 1" dynamic-body>
 				
-							<a-entity id="ptop" gltf-model="#ccyly" position="0 0.75 0" rotation="0 0 0" scale="2.0 0.5 2.0" static-body ></a-entity>
+				
+				
+				
+							<!--a-entity id="ptop" gltf-model="#ccylz" position="0 -0.375 0" rotation="0 0 0" scale=" 1.0 0.25 1.0" static-body ></a-entity>
 
-							<a-entity id="gudgeon-pin" gltf-model="#ccylz" position="0 0 0" rotation="0 0 0" scale="0.2 0.2 0.9" static-body ></a-entity>
+							<a-entity id="gudgeon-pin" gltf-model="#ccylz" position="0 0 0" rotation="0 0 0" scale=" 0.2 0.2 0.9" static-body ></a-entity>
 
-							<a-entity id="pcen" gltf-model="#cb1" position="0 0 0" rotation="0 0 0" scale="1 1 1" static-body ></a-entity>
+							<a-entity id="pcen" gltf-model="#cb1" position="0 0 0" rotation="0 0 0" scale=" 0.5 0.5 0.5" static-body ></a-entity>
 
-							<a-entity id="pbot" gltf-model="#ccyly" position="0 -0.75 0" rotation="0 0 0" scale="2.0 0.5 2.0" static-body ></a-entity>
+							<a-entity id="pbot" gltf-model="#ccylz" position="0 -0.375 0" rotation="0 0 0" scale=" 1.0 0.25 1.0" static-body ></a-entity-->
 
 					</a-entity>
-
 	
 	
 	
 	
-					<a-entity id="conrod" gltf-model="#cb1" position="0 3 0" style="height:2.0; width:0.2; depth:0.2" dynamic-body >
-					
-					<a-entity id="becon" gltf-model="#ccylx" position="0 -1 0" rotation="0 0 0" scale="2 0.25 0.25" dynamic-body 
-					constraint="type:hinge;target:#journal;pivot:0 0 0;targetPivot:0 0 0;Axis:0 0 1;targetAxis:0 0 1;"
-					></a-entity>
+	
+	<!--						<a-entity id="conrod" gltf-model="#cb1" position="0 3 0" style="height:2.0; width:0.2; depth:0.2" dynamic-body >
+								<a-entity id="becon" gltf-model="#ccylx" position="0 -1 0" rotation="0 0 0" scale="2 0.25 0.25" dynamic-body 
+								constraint="type:hinge;target:#journa11;"
+								></a-entity>
 								
-					<a-entity id="lecon" gltf-model="#ccylx" position="0 1 0" rotation="0 0 0" scale="1 5 5" static-body ></a-entity>/></a-entity>
-								
-					<a-entity id="bew2" gltf-model="#ccylx" position="0.5 0.5 0" rotation="0 0 0" scale="1 5 5" static-body ></a-entity>
+								<a-entity id="lecon" gltf-model="#ccylx" position="0 1 0" rotation="0 0 0" scale="1 5 5" static-body ></a-entity>
 
-			<a-entity id="web2" gltf-model="#cb1" position="0.25 0.5 0" rotation="0 0 0" scale=".2 1 1" static-body ></a-entity>
-		
- 		</a-entity>
+								
+							</a-entity>
+
+			
+			
+			
+			
+			
+								
+								<a-entity id="bew2" gltf-model="#ccylx" position="0.5 0.5 0" rotation="0 0 0" scale="1 5 5" static-body ></a-entity>
+
+
+
+
+					<a-entity id="web2" gltf-model="#cb1" position="0.25 0.5 0" rotation="0 0 0" scale=".2 1 1" static-body ></a-entity>
+	
+	
+ 		</a-entity-->
 		
 			<a-sky id="askye" radius="100" color="blue"  ></a-sky>
 			<a-plane id="ground" style="width:80;height:80" position="0 0 0" rotation="-90 0 0" side="double"  visible="false" ></a-plane>
@@ -398,4 +408,5 @@
 	
 	</body>
 </html>
+<!--
 
