@@ -655,7 +655,7 @@
 					
 							<!--a-entity id="pring1" gltf-model="#ccyly" position="0 0.45 0" rotation="0 0 0" scale="1.75 0.1 1.75 0.1" static-body ></a-entity>
 							<a-entity id="pring2" gltf-model="#ccyly" position="0 0.35 0" rotation="0 0 0" scale="1.55 0.1 1.55" static-body ></a-entity>
-							<a-entity id="pring3" gltf-model="#ccyly" position="0 0.25 0" rotation="0 0 0" scale="1.75 0.1 1.75" static-body ></a-entity>
+0							<a-entity id="pring3" gltf-model="#ccyly" position="0 0.25 0" rotation="0 0 0" scale="1.75 0.1 1.75" static-body ></a-entity>
 							<a-entity id="pring4" gltf-model="#cb1" position="0 0 -0.05" rotation="0 0 0" scale="0.25 0.25 0.025" static-body ></a-entity>
 							<a-entity id="pring5" gltf-model="#" position="0 0 0" rotation="0 0 0" scale="0.8 0.8 1.0" static-body ></a-entity>
 							<a-entity id="pring6" gltf-model="#cb1" position="0 0 0.05" rotation="0 0 0" scale="0.25 0.25 0.025" static-body ></a-entity>
@@ -677,7 +677,7 @@
 				
 				
 				
-				<a-emtity id="piston" dynamic-body  >
+				<a-emtity id="piston" mixin="hinge_constraint_y" dynamic-body  >
 							<a-entity id="ptop" gltf-model="#ccylz" position="0 -0.375 0" rotation="0 0 0" scale=" 1.0 0.25 1.0" static-body ></a-entity>
 
 							<a-entity id="gudgeon-pin" gltf-model="#ccyly" position="0 0 0" rotation="0 0 0" scale=" 0.2 0.2 0.9" static-body ></a-entity>
@@ -699,11 +699,11 @@
 						<a-entity id="conrod" mixin="cube style="height:5.0; width:0.2; depth:0.5;" dynamic-body >
 							
 								<a-entity id="becon" gltf-model="#ccylx" position="0 -2.75 0" rotation="0 0 0" scale="1 1 1" 
-									constraint="type:hinge;target:journal;pivot:0 0 0;targetPivot:0 0 0;Axis:1 0 0;targetAxis:1 0 0;" static-body ;"	></a-entity>
+									constraint="type:hinge;target:#journal;pivot:0 0 0;targetPivot:0 0 0;Axis:1 0 0;targetAxis:1 0 0;" static-body ;" ></a-entity>
 								
-						
-								<a-entity id="lecon" gltf-model="#ccylx" position="0 2.75 0" rotation="0 0 0" scale="1 1 1" static-body ></a-entity>
-	
+								 <a-entity id="lecon" gltf-model="#ccylx" position="0 2.75 0" rotation="0 0 0" scale="1 1 1" 
+									constraint="type:hinge;target:#gudgeon-pin;pivot:0 0 0;targetPivot:0 0 0;Axis:1 0 0;targetAxis:1 0 0;" static-body ;" ></a-entity>
+								
 						</a-emtity>
 
 								
